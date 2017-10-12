@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController
 {
     @IBOutlet weak var firstButton: UIButton!
+    @IBOutlet weak var firstSwitch: UISwitch!
     
     @IBAction func firstMethod(_ sender: UIButton)
     {

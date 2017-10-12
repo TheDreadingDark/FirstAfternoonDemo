@@ -27,15 +27,29 @@
                                     <action selector="firstMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g5d-2p-IGf"/>
                                 </connections>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6nl-pl-dfE">
+                                <rect key="frame" x="164" y="406" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="firstButton" destination="DN0-Lr-MWG" id="6q0-Is-5wi"/>
+                        <outlet property="firstSwitch" destination="6nl-pl-dfE" id="p1v-BB-LCu"/>
+                        <outlet property="searchDisplayController" destination="t2T-aR-vPJ" id="QID-c8-F0K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="t2T-aR-vPJ">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="4ec-hf-Bcx"/>
+                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="iXR-hG-nzy"/>
+                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="nWf-va-CBJ"/>
+                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="Fvd-rZ-PmN"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="24.800000000000001" y="31.934032983508249"/>
         </scene>
