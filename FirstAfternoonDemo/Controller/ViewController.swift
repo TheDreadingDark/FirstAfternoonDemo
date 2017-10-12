@@ -37,7 +37,10 @@ class ViewController: UIViewController
         return newColor
     }
     
+    var backgroundColours = [UIColor()]
+    var backgroundLoop = 0
     
+    override func view
     
     override func viewDidLoad()
     {
