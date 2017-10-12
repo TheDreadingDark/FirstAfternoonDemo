@@ -14,6 +14,7 @@
 		702499A91F880155006DDC48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 702499A71F880155006DDC48 /* LaunchScreen.storyboard */; };
 		702499B41F880155006DDC48 /* FirstAfternoonDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702499B31F880155006DDC48 /* FirstAfternoonDemoTests.swift */; };
 		702499BF1F880155006DDC48 /* FirstAfternoonDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702499BE1F880155006DDC48 /* FirstAfternoonDemoUITests.swift */; };
+		70C33AC41F8FF55E003912F0 /* SecondScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C33AC31F8FF55E003912F0 /* SecondScreenController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		702499BA1F880155006DDC48 /* FirstAfternoonDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstAfternoonDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		702499BE1F880155006DDC48 /* FirstAfternoonDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAfternoonDemoUITests.swift; sourceTree = "<group>"; };
 		702499C01F880155006DDC48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70C33AC31F8FF55E003912F0 /* SecondScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 			children = (
 				7024999E1F880155006DDC48 /* AppDelegate.swift */,
 				702499A01F880155006DDC48 /* ViewController.swift */,
+				70C33AC31F8FF55E003912F0 /* SecondScreenController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 			files = (
 				702499A11F880155006DDC48 /* ViewController.swift in Sources */,
 				7024999F1F880155006DDC48 /* AppDelegate.swift in Sources */,
+				70C33AC41F8FF55E003912F0 /* SecondScreenController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
