@@ -10,35 +10,33 @@ import UIKit
 
 class ViewController: UIViewController
 {
+    
+    private lazy var colorTool : ColorTools = ColorTools()
     @IBOutlet weak var firstButton: UIButton!
-    @IBOutlet weak var firstSwitch: UISwitch!
     
     @IBAction func firstMethod(_ sender: UIButton)
     {
-        if ( firstButton.backgroundColor == .orange )
-        {
-            firstButton.backgroundColor = .black
-        }
-        else
-        {
-            firstButton.backgroundColor = .orange
-        }
-        view.backgroundColor = createRandomColor()
+        firstButton.backgroundColor = colorTool.createRandomColor()
+        view.backgroundColor = colorTool.createRandomColor()
+        firstButton.setTitleColor(colorTool.createRandomColor(), for: .normal)
     }
-    
-    private func createRandomColor() -> UIColor
-    {
-        let newColor :UIColor
-        let redValue :CGFloat = CGFloat (Double (arc4random_uniform(256)) / 255.00)
-        let greenValue :CGFloat = CGFloat (Double (arc4random_uniform(256)) / 255.00)
-        let blueValue :CGFloat = CGFloat (Double (arc4random_uniform(256)) / 255.00)
-        newColor = UIColor(red: redValue, green: greenValue, blue: blueValue, alpha: CGFloat(1.0))
         
-        return newColor
-    }
+        
+        
+        
+        //    {
+//        if ( firstButton.backgroundColor == .orange )
+//        {
+//            firstButton.backgroundColor = .black
+//        }
+//        else
+//        {
+//            firstButton.backgroundColor = .orange
+//        }
+//        view.backgroundColor = createRandomColor()
+//    }
     
-    
-    
+    override func viewDidLoad()
     {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
