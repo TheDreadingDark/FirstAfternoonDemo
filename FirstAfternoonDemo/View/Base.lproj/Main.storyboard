@@ -32,9 +32,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1L4-gM-7tZ">
-                                <rect key="frame" x="165" y="534" width="46" height="30"/>
+                                <rect key="frame" x="130" y="538" width="114" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Second Screen"/>
                                 <connections>
                                     <segue destination="tCa-E5-UeI" kind="show" id="Kj9-Ga-XXF"/>
                                 </connections>
@@ -58,7 +58,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="-871" y="30"/>
+            <point key="canvasLocation" x="-871.20000000000005" y="29.23538230884558"/>
         </scene>
         <!--Second String Controller-->
         <scene sceneID="UXa-3i-KEL">
@@ -69,9 +69,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rtd-KM-4ks">
-                                <rect key="frame" x="164" y="318" width="46" height="30"/>
+                                <rect key="frame" x="130" y="534" width="115" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Third Screen"/>
                                 <connections>
                                     <segue destination="gjR-ud-Mh6" kind="show" id="0fb-9C-3rx"/>
                                 </connections>
@@ -83,6 +83,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="USC-8g-0oz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="30.134932533733135"/>
         </scene>
         <!--Third Screen View Controller-->
         <scene sceneID="bph-zM-nd8">
@@ -91,13 +92,67 @@
                     <view key="view" contentMode="scaleToFill" id="JYF-c8-kyV" customClass="ThirdScreenViewController">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qr5-6J-AJc">
+                                <rect key="frame" x="139" y="530" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Media Screen"/>
+                                <connections>
+                                    <segue destination="hap-q4-EpK" kind="show" id="vK3-xo-VRH"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="BcM-bm-SL8"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fnb-8S-Rwe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="870" y="30"/>
+            <point key="canvasLocation" x="869.60000000000002" y="29.23538230884558"/>
+        </scene>
+        <!--Media Controller-->
+        <scene sceneID="YHG-qG-Gg5">
+            <objects>
+                <viewController id="hap-q4-EpK" customClass="MediaController" customModule="FirstAfternoonDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b5U-Xj-mZQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHz-Qa-kUy" userLabel="Image Button">
+                                <rect key="frame" x="147" y="378" width="80" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Play/Pause"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qkd-x6-Sbt" userLabel="Sound Button">
+                                <rect key="frame" x="137" y="318" width="101" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Change Image"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uZ0-xX-vnf">
+                                <rect key="frame" x="67" y="99" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="hBc-7t-OJd" userLabel="Sound Slider">
+                                <rect key="frame" x="128" y="436" width="118" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="R3k-xr-rcQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="changeImage" destination="qkd-x6-Sbt" id="JbG-f6-eKv"/>
+                        <outlet property="imageCounter" destination="xHz-Qa-kUy" id="Z1j-Vj-EjI"/>
+                        <outlet property="imageFrame" destination="uZ0-xX-vnf" id="hCN-uV-H0I"/>
+                        <outlet property="imageView" destination="uZ0-xX-vnf" id="iW6-YE-CK6"/>
+                        <outlet property="playPause" destination="xHz-Qa-kUy" id="g5n-HY-BNq"/>
+                        <outlet property="slider" destination="hBc-7t-OJd" id="a1n-AX-8j8"/>
+                        <outlet property="soundSlider" destination="hBc-7t-OJd" id="ErR-Wd-b1k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VeP-89-yQk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-871.20000000000005" y="802.848575712144"/>
         </scene>
     </scenes>
 </document>

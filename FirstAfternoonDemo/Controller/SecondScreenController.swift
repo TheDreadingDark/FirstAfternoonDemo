@@ -11,7 +11,7 @@ import UIKit
 public class SecondStringController : UIViewController
 {
     private lazy var color : ColorTools = ColorTools()
-    
+
     public override func viewDidLoad()
     {
         super.viewDidLoad()
