@@ -142,12 +142,14 @@
                     </view>
                     <connections>
                         <outlet property="changeImage" destination="qkd-x6-Sbt" id="JbG-f6-eKv"/>
+                        <outlet property="imageButton" destination="qkd-x6-Sbt" id="cZ5-xo-AYo"/>
                         <outlet property="imageCounter" destination="xHz-Qa-kUy" id="Z1j-Vj-EjI"/>
                         <outlet property="imageFrame" destination="uZ0-xX-vnf" id="hCN-uV-H0I"/>
                         <outlet property="imageView" destination="uZ0-xX-vnf" id="iW6-YE-CK6"/>
                         <outlet property="playPause" destination="xHz-Qa-kUy" id="g5n-HY-BNq"/>
                         <outlet property="slider" destination="hBc-7t-OJd" id="a1n-AX-8j8"/>
-                        <outlet property="soundSlider" destination="hBc-7t-OJd" id="ErR-Wd-b1k"/>
+                        <outlet property="soundButton" destination="xHz-Qa-kUy" id="qMC-oX-E5V"/>
+                        <outlet property="soundSlider" destination="hBc-7t-OJd" id="Idi-fG-jAy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VeP-89-yQk" userLabel="First Responder" sceneMemberID="firstResponder"/>
