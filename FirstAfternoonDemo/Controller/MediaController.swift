@@ -79,7 +79,7 @@ public class MediaController : UIViewController
                     soundPlayer?.play()
                 }
             }
-            
+            //Less stable version
 //            if ((soundPlayer?.isPlaying)!)
 //            {
 //                soundPlayer?.pause()
